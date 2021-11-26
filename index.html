@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela login</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            background-image:url("fundo-amarelo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .login{
+            background-color:rgba(0, 0, 0, 0.644);
+            opacity:0.8;
+            height:360px;
+            width:280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:80px;
+            color:white;
+            border-radius: 5px;
+    
+        }
+
+        .login label, input{
+            display:block;
+            margin-bottom:1em;
+            font-size:18px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            
+            
+        }
+
+        input[type="text"], [type="password"]{
+            
+            background-color:black;
+            border-top:0px solid white;
+            border-left: 0px none white;
+            border-right: 0px hidden white;
+            border-bottom:1px solid yellow;
+            padding:10px;
+            opacity: 0.5;
+            color:white;
+            width:250px;
+            border-radius:3px;
+            
+            
+        }
+
+        .send input{
+            background-color:#EEEE00;
+            width:230px;
+            height:50px;
+            border:0px outset whitesmoke;
+            border-radius: 15px;
+        }
+
+        .send a{
+            text-decoration: none;
+            color:white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            
+            <div>
+                <label>Email</label>
+                <input type="text" name="email" id="name" placeholder="Digite seu email">
+                
+
+                <label>Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+          </div>
+
+          <div class="send">
+                <input type="submit" value="Sign-in" class="botao">
+                <a href="#">Forget Password</a>
+          </div>
+        </div>
+
+     
+    </div>
+    
+    
+</body>
+</html>
