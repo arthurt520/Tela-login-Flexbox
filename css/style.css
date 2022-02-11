@@ -15,8 +15,8 @@
 }
 
 .login{
-    background-color:rgba(0, 0, 0, 0.644);
-    opacity:0.8;
+    background-color:black;
+    opacity:0.6;
     height:360px;
     width:280px;
     display: flex;
@@ -25,7 +25,7 @@
     align-items: center;
     padding:80px;
     color:white;
-    border-radius: 5px;
+    border-radius:2px;
 
 }
 
@@ -41,17 +41,20 @@
 input[type="text"], [type="password"]{
     
     background-color:black;
-    border-top:0px solid white;
-    border-left: 0px none white;
-    border-right: 0px hidden white;
-    border-bottom:1px solid yellow;
+    border:0;
+    border-bottom:2px solid yellow;
+    outline:0px;
     padding:10px;
-    opacity: 0.5;
+    opacity:0.8;
     color:white;
-    width:250px;
-    border-radius:3px;
+    
+
     
     
+}
+
+input:hover{
+    border-bottom:2px solid beige;
 }
 
 .send input{
@@ -67,4 +70,26 @@ input[type="text"], [type="password"]{
     color:white;
     font-size: 18px;
     font-weight: bold;
+}
+/* Media do tamanho da tela*/
+@media screen and (min-width:481px) and (max-width:1024px){
+    .login{
+        width:30%;
+        height:50%;
+        background-color:black;
+    }
+
+    input[type="text"], [type="password"]{
+    
+      height:5px;
+      width:200px;   
+    }
+
+    .send input{
+        background-color:#EEEE00;
+        width:200px;
+        height:30px;
+        border:0px outset whitesmoke;
+        border-radius: 15px;
+    }
 }
